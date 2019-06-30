@@ -68,7 +68,7 @@
         // $containerName = "blockblobs".generateRandomString();
         $containerName = "blockblobsaoidyq";
 
-        try {
+//         try {
             // Create container.
             // $blobClient->createContainer($containerName, $createContainerOptions);
 
@@ -90,9 +90,9 @@
 //                     echo "<td><button onclick='processImage(this)'>Analyze image</button></td></tr>";
 //                 }
             
-                $listBlobsOptions->setContinuationToken($result->getContinuationToken());
-            } while($result->getContinuationToken());
-            echo "</table>";
+//                 $listBlobsOptions->setContinuationToken($result->getContinuationToken());
+//             } while($result->getContinuationToken());
+//             echo "</table>";
 
             // Get blob.
             // echo "This is the content of the blob uploaded: ";
