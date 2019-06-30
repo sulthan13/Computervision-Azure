@@ -1,6 +1,5 @@
 <html>
     <head>
-        <Title>Image Uploading and Analyzing</Title>
         <style type="text/css">
             body { background-color: #fff; border-top: solid 10px #000;
                 color: #333; font-size: .85em; margin: 20; padding: 20;
@@ -19,7 +18,9 @@
     </head>
 
     <body>
-        <h1>Image Analyzing with Computer Vision</h1>
+        
+        
+        <h1 class="text-center">Image Analyzing with Computer Vision</h1>
 
         <form role="form" method="POST" action="index.php?Upload" enctype="multipart/form-data">
             <label>Upload Image File</label>
