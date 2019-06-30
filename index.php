@@ -20,7 +20,7 @@
     <body>
         
         
-        <h1 class="text-center">Image Analyzing with Computer Vision</h1>
+        <p class="text-center" class="h2">Image Analyzing with Computer Vision</p>
 
         <form role="form" method="POST" action="index.php?Upload" enctype="multipart/form-data">
             <label>Upload Image File</label>
