@@ -18,12 +18,12 @@
     </head>
 
     <body>
-        <h1>Image Analyzing with Computer Vision</h1>
+        <h1>Test Azure Computer Vision</h1>
 
         <form role="form" method="POST" action="cv.php?Upload" enctype="multipart/form-data">
             <label>Upload Image File</label>
             <input type="file" id="imageFile" name="imageFile">
-            <button type="submit">Upload</button>
+            <button type="submit">simpan</button>
         </form>
 
         <div id="wrapper" style="width:1020px; display:table;">
@@ -87,7 +87,7 @@
                 {
                     echo "<tr><td>". $blob->getName()."</td>";
                     echo "<td>".$blob->getUrl()."</td>";
-                    echo "<td><button onclick='processImage(this)'>Analyze image</button></td></tr>";
+                    echo "<td><button onclick='processImage(this)'>Tes analisis gambar</button></td></tr>";
                 }
             
                 $listBlobsOptions->setContinuationToken($result->getContinuationToken());
