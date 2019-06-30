@@ -15,6 +15,7 @@
             td { padding: 0.25em 2em 0.25em 0em; border: 0 none; }
         </style>
         <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.0/jquery.min.js"></script>
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     </head>
 
     <body>
@@ -23,7 +24,7 @@
         <form role="form" method="POST" action="index.php?Upload" enctype="multipart/form-data">
             <label>Upload Image File</label>
             <input type="file" id="imageFile" name="imageFile">
-            <button type="submit">Upload</button>
+            <button type="submit" class="btn btn-primary">Upload</button>
         </form>
 
         <div id="wrapper" style="width:1020px; display:table;">
