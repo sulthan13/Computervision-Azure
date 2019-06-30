@@ -20,7 +20,7 @@
     <body>
         <h1>Test Azure Computer Vision</h1>
 
-        <form role="form" method="POST" action="cv.php?Upload" enctype="multipart/form-data">
+        <form role="form" method="POST" action="index.php?Upload" enctype="multipart/form-data">
             <label>Upload Image File</label>
             <input type="file" id="imageFile" name="imageFile">
             <button type="submit">simpan</button>
@@ -123,7 +123,7 @@
                 $content = fopen($_FILES['imageFile']['tmp_name'], "r");
                 //Upload blob
                 $blobClient->createBlockBlob($containerName, $fileToUpload, $content);
-                header("Refresh:0; url=cv.php");
+                header("Refresh:0; url=index.php");
             }
         }
         ?>
