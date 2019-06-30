@@ -68,7 +68,7 @@
         // $containerName = "blockblobs".generateRandomString();
         $containerName = "blockblobsaoidyq";
 
-//         try {
+         try {
             // Create container.
             // $blobClient->createContainer($containerName, $createContainerOptions);
 
@@ -76,29 +76,29 @@
             $listBlobsOptions = new ListBlobsOptions();
             //$listBlobsOptions->setPrefix("HelloWorld");
 
-//             echo "<table>";
-//             echo "<tr><th>File Name</th>";
-//             echo "<th>URL</th>";
-//             echo "<th>Action</th></tr>";
+             echo "<table>";
+             echo "<tr><th>File Name</th>";
+             echo "<th>URL</th>";
+             echo "<th>Action</th></tr>";
 
-//             do{
-//                 $result = $blobClient->listBlobs($containerName, $listBlobsOptions);
-//                 foreach ($result->getBlobs() as $blob)
-//                 {
-//                     echo "<tr><td>". $blob->getName()."</td>";
-//                     echo "<td>".$blob->getUrl()."</td>";
-//                     echo "<td><button onclick='processImage(this)'>Analyze image</button></td></tr>";
-//                 }
+             do{
+                 $result = $blobClient->listBlobs($containerName, $listBlobsOptions);
+                 foreach ($result->getBlobs() as $blob)
+                 {
+                    echo "<tr><td>". $blob->getName()."</td>";
+                    echo "<td>".$blob->getUrl()."</td>";
+                    echo "<td><button onclick='processImage(this)'>Analyze image</button></td></tr>";
+                 }
             
-//                 $listBlobsOptions->setContinuationToken($result->getContinuationToken());
-//             } while($result->getContinuationToken());
-//             echo "</table>";
+                $listBlobsOptions->setContinuationToken($result->getContinuationToken());
+           } while($result->getContinuationToken());
+            echo "</table>";
 
-            // Get blob.
-            // echo "This is the content of the blob uploaded: ";
-            // $blob = $blobClient->getBlob($containerName, $fileToUpload);
-            // fpassthru($blob->getContentStream());
-            // echo "<br />";
+            Get blob.
+            echo "This is the content of the blob uploaded: ";
+             $blob = $blobClient->getBlob($containerName, $fileToUpload);
+             fpassthru($blob->getContentStream());
+             echo "<br />";
         }
         catch(ServiceException $e){
             // Handle exception based on error codes and messages.
