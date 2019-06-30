@@ -90,7 +90,7 @@
                 {
                     echo "<tr><td>". $blob->getName()."</td>";
                     echo "<td>".$blob->getUrl()."</td>";
-                    echo "<td><button onclick='processImage(this)'>Tes analisis gambar</button></td></tr>";
+                    echo "<td><button onclick='processImage(this)' class="btn btn-success">Tes analisis gambar</button></td></tr>";
                 }
             
                 $listBlobsOptions->setContinuationToken($result->getContinuationToken());
