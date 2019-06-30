@@ -21,7 +21,7 @@
     </head>
 
     <body>
-        <h1>Test Azure Computer Vision</h1>
+        <h1 class="text-center">Test Azure Computer Vision</h1>
 
         <form role="form" method="POST" action="index.php?Upload" enctype="multipart/form-data">
             <label>Upload Image File</label>
