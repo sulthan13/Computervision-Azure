@@ -14,6 +14,9 @@
             th { font-size: 1.2em; text-align: left; border: none; padding-left: 0; }
             td { padding: 0.25em 2em 0.25em 0em; border: 0 none; }
         </style>
+        
+        
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
         <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.0/jquery.min.js"></script>
     </head>
 
@@ -23,7 +26,7 @@
         <form role="form" method="POST" action="index.php?Upload" enctype="multipart/form-data">
             <label>Upload Image File</label>
             <input type="file" id="imageFile" name="imageFile">
-            <button type="submit">simpan</button>
+            <button type="submit" class="btn btn-primary">simpan</button>
         </form>
 
         <div id="wrapper" style="width:1020px; display:table;">
