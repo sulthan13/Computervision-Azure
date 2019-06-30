@@ -123,7 +123,7 @@
                 $content = fopen($_FILES['imageFile']['tmp_name'], "r");
                 //Upload blob
                 $blobClient->createBlockBlob($containerName, $fileToUpload, $content);
-                header("Refresh:0; url=cv.php");
+                header("Refresh:0; url=index.php");
             }
         }
         ?>
