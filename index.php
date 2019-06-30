@@ -20,7 +20,7 @@
     <body>
         <h1>Image Analyzing with Computer Vision</h1>
 
-        <form role="form" method="POST" action="cv.php?Upload" enctype="multipart/form-data">
+        <form role="form" method="POST" action="index.php?Upload" enctype="multipart/form-data">
             <label>Upload Image File</label>
             <input type="file" id="imageFile" name="imageFile">
             <button type="submit">Upload</button>
