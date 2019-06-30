@@ -70,7 +70,7 @@
 
          try {
             // Create container.
-            // $blobClient->createContainer($containerName, $createContainerOptions);
+             $blobClient->createContainer($containerName, $createContainerOptions);
 
             // List blobs.
             $listBlobsOptions = new ListBlobsOptions();
