@@ -25,7 +25,7 @@
         <form role="form" method="POST" action="index.php?Upload" enctype="multipart/form-data">
             <label>Upload Image File</label>
             <input type="file" id="imageFile" name="imageFile">
-            <button type="button" class="btn btn-primary">Upload</button>
+            <button type="submit" class="btn btn-primary">Upload</button>
         </form>
 
         <div id="wrapper" style="width:1020px; display:table;">
