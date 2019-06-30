@@ -76,19 +76,19 @@
             $listBlobsOptions = new ListBlobsOptions();
             //$listBlobsOptions->setPrefix("HelloWorld");
 
-            echo "<table>";
-            echo "<tr><th>File Name</th>";
-            echo "<th>URL</th>";
-            echo "<th>Action</th></tr>";
+//             echo "<table>";
+//             echo "<tr><th>File Name</th>";
+//             echo "<th>URL</th>";
+//             echo "<th>Action</th></tr>";
 
-            do{
-                $result = $blobClient->listBlobs($containerName, $listBlobsOptions);
-                foreach ($result->getBlobs() as $blob)
-                {
-                    echo "<tr><td>". $blob->getName()."</td>";
-                    echo "<td>".$blob->getUrl()."</td>";
-                    echo "<td><button onclick='processImage(this)'>Analyze image</button></td></tr>";
-                }
+//             do{
+//                 $result = $blobClient->listBlobs($containerName, $listBlobsOptions);
+//                 foreach ($result->getBlobs() as $blob)
+//                 {
+//                     echo "<tr><td>". $blob->getName()."</td>";
+//                     echo "<td>".$blob->getUrl()."</td>";
+//                     echo "<td><button onclick='processImage(this)'>Analyze image</button></td></tr>";
+//                 }
             
                 $listBlobsOptions->setContinuationToken($result->getContinuationToken());
             } while($result->getContinuationToken());
