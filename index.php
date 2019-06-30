@@ -80,9 +80,9 @@
             //$listBlobsOptions->setPrefix("HelloWorld");
 
             echo "<table>";
-            echo "<tr><th>File Name</th>";
-            echo "<th>URL</th>";
-            echo "<th>Action</th></tr>";
+            echo "<tr><th>Nama Gambar</th>";
+            echo "<th>Alamat</th>";
+            echo "<th>Tes Analisis</th></tr>";
 
             do{
                 $result = $blobClient->listBlobs($containerName, $listBlobsOptions);
