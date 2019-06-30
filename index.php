@@ -24,7 +24,7 @@
         <h1 class="text-center">Test Azure Computer Vision</h1>
 
         <form role="form" method="POST" action="index.php?Upload" enctype="multipart/form-data">
-            <label>Upload Image File</label>
+            <label>pilih gambar</label>
             <input type="file" id="imageFile" name="imageFile">
             <button type="submit" class="btn btn-primary">simpan</button>
         </form>
@@ -32,7 +32,7 @@
         <div id="wrapper" style="width:1020px; display:table;">
             <div id="jsonOutput" style="width:600px; display:table-cell;">
                 Response:<br><br>
-                <textarea id="responseTextArea" class="UIInput" style="width:550px; height:300px;" readonly="readonly"></textarea>
+                <textarea id="responseTextArea" class="UIInput" style="width:550px; height:550px;" readonly="readonly"></textarea>
             </div>
 
             <div id="imageDiv" style="width:420px; display:table-cell;">
